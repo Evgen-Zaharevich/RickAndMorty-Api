@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: #666;
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -12,9 +16,152 @@ body {
   line-height: 1.5;
 }
 
-#search-box {
-  font: inherit;
-  padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
+.main-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.main-page__logo {
+  border-radius: 180px;
+}
+
+.main-page__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.main-page__link {
+  margin-top: 10px;
+  padding: 5px;
+
+  border-radius: 5px;
+}
+
+.main-page__link:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.main-page__link:hover a {
+  background-color: lightgrey;
+  color: black;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form__input {
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.form__input:hover {
+  color: black;
+}
+
+.form__input:focus {
+  color: black;
+}
+
+.button {
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.button__bottom__back {
+  margin-right: 15px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.button__bottom__back:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.button__bottom__next {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.button__bottom__next:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.button-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  width: 250px;
+  height: 500px;
+}
+
+.character-card__container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  width: 250px;
+  height: 500px;
+
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+}
+
+.character-card__img {
+  border-bottom: 2px solid lightgrey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.character-card__name {
+  text-align: center;
+}
+
+.character-card__gender {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.character-card__location {
+  text-align: center;
+  margin-top: 0px;
+  font-size: 15px;
 }
