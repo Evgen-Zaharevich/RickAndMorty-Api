@@ -22,14 +22,11 @@ function onCreateMarkupForCard({ image, name, gender, location }) {
   onDeleteCard();
 
   const markup = `<div class="character-card__container"><img src="${image}" alt="${name}" class="character-card__img" width="246" hight="250" />
-      <h1 class="character-card__name"><b></b>${name}</h1>
+      <h2 class="character-card__name"><b></b>${name}</h2>
       <p class="character-card__gender"><b>Gender: </b>${gender}</p>
       <p class="character-card__location"><b>Location: </b>${Object.values(
         location.name
-      )}</p></div> <div class="button-container">
-      <button class="button__bottom__back" type="submit">Back</button>
-      <button class="button__bottom__next" type="submit">Next</button>
-    </div>`;
+      ).join(``)}</p></div> `;
   CardRef.insertAdjacentHTML(`afterbegin`, markup);
 }
 
@@ -37,6 +34,6 @@ function onDeleteCard() {
   CardRef.innerHTML = ``;
 }
 
-// function onPressNextButtonChangeValue(number) {
-//   return (number += 1);
-// }
+function onPressNextButtonChangeValue(number) {
+  return (number += 1);
+}
