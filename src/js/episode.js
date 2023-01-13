@@ -41,7 +41,7 @@ function onReturnResidentsFromEpisode({ name, characters }) {
 function onCreateMarkupH1({ name }) {
   onDeleteMarkupH1();
 
-  const markup = `<h3 class="location-name"><b>Name Location: </b>${name}</h3>
+  const markup = `<h3 class="location-name"><b>Name Episode: </b>${name}</h3>
   <h4 style="text-align: center;"><b>Characters in this episode</b></h4>`;
   episodeNameContainerRef.insertAdjacentHTML('afterbegin', markup);
 }
